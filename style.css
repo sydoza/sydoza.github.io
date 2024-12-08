@@ -1,105 +1,377 @@
-
 body {
-    background-color: #fcf7ef;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    font-family: "Abril Fatface", serif;
+    background-color: #EFF7FB;
 }
 
-#title {
-    background-color: #fcf7ef;
-    color: #33765c;
-    font-size: 65px;
-    font-weight: bold;
-    height: 220px;
+#shipping {
     width: 100%;
+    height: 17px;
+    font-size: 12px;
+    font-family: "Outfit", sans-serif;
     text-align: center;
-    line-height: 220px;
+    background-color: #DB6B92;
+    color: #EFF7FB;
 }
 
-#name {
-    width: 100%;
-    height: 80px;
-    background-color: #A6BFAB;
-    line-height: 70px;
-    color: white;
-    text-indent: 10px;
-    border-style: dashed;
-    border-width: 5px 0px 0px 0px;
-    border-color: #fcf7ef;
+#homediv {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 32px;
 }
-#links {
-    width: 100%;
+#socialsdiv2 {
+    width: 90px;
     height: 60px;
-    background-color: #A6BFAB;
-    text-indent: 10px;
-    border-style: dashed;
-    border-width: 0px 0px 5px 0px;
-    border-color: #fcf7ef;
-}
-
-#bowling {
-    width: 49.4%;
     text-align: center;
-    height: 200px;
-    float: left; /*positions element in the container */
-    display: flex; /*sets the layout box flexible*/
-    align-items: center; /*center items vertically*/
-    background-color: whitesmoke;
+    position: absolute;
+    right: 5px;
+    top: 32px;
 }
-#bowlingname {
-    font-weight: bold;
-    color: #33765c;
-    font-size: 30px;
-}
-#bowlingdef {
-    color:black;
-    font-size: 20px;
+.socials2 {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
 }
 
-#beach {
-    width: 50.5%;
-    text-align: center;
-    height: 200px;
-    float: right;
+#logodiv {
+    width: 98%;
+    height: 145px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-}
-#beachname {
-    font-weight: bold;
-    color: #33765c;
-    font-size: 30px;
-}
-#beachdef {
-    color:black;
-    font-size: 20px;
-}
-
-#bowlingimg {
-    width: 50.5%;
-    height: 450px;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center; /*center items horizontally*/
-    border-style: dashed;
-    border-width: 5px 0px 5px 0px;
-    border-color: #A6BFAB;
-}
-
-#beachimg {
-    width: 49%;
-    height: 450px;
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: center; /*center items horizontally*/
-    border-style: dashed;
-    border-width: 5px 0px 5px 0px;
-    border-color: #A6BFAB;
-}
-
-#text {
+    font-family: "Pacifico", cursive;
     font-size: 40px;
-    color: #33765c;
+    font-style: italic;
+    color: #D75B86;
+    overflow: hidden;
+    padding-left: 20px;
+    /* border-style: solid;
+    border-color: black; */
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    padding-left: 5px;
+}
+
+#menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    color: #DB6B92;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    /* border-style: solid;
+    border-color: black; */
+}
+.menuitem {
+    padding-left: 25px;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the parent element */
+}
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+@keyframes cycle {
+    0% {
+        transform: translateX(0); /*Start at original position*/
+    }
+    100% {
+        transform: translateX(-100%); /*Move fully across the screen*/
+    }
+}
+#dealdiv {
+    width: 100%;
+    height: 45px;
+    background-color: #F391BF;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap; 
+    /* keeps text on one line */
+    font-size: 15px;
+    align-items: center;
+    color: #EFF7FB;
+    font-style: italic;
+    font-family: "Outfit", sans-serif;
+    position: relative;
+    margin-top: 15px;
+}
+.deal {
+    padding-left: 60px;
+    animation-name: cycle;
+    animation-duration: 21s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#topbox {
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+    background-color: #5DAAC3;
+}
+.cottoncandy {
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+}
+
+#specialsdiv {
+    width: 100%;
+    height: 800px;
+    color: #D75B86;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bunny {
+    width: 440px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 127px;
+}
+.bunnyimg {
+    width: 100%;
+    height: auto;
+}
+.boybunnyimg {
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+}
+.header4 {
+    font-size: 35px;
+    font-family: "Concert One", sans-serif;
+    text-align: left;
+}
+.bunnydescription {
+    width: 355px;
+    text-align: left;
+}
+.a2 {
+    text-decoration: underline;
+    color: inherit; /* Inherits the text color from the parent element */
+    font-family: "Abril Fatface", serif;
+}
+
+#aboutdiv {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.about {
+    width: 550px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #DB6B92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutdescription {
+    width: 365px;
+    height: 340px;
+    color: #EFF7FB;
+    text-align: center;
+}
+#header5 {
+    font-size: 65px;
+}
+#p2 {
+    font-size: 16.5px;
+    font-family: "Outfit", sans-serif;
+}
+.storeimg {
+    width: 100%;
+    height: 100%;
+}
+
+#productsdiv {
+    width: 100%;
+    height: 510px;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent content from wrapping to the next line */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    justify-content: flex-start;
+    align-items: center;
+} 
+.productstitle {
+    height: 255px;
+    width: 31%;
+    color: #D75B86;
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+#header1 {
+    color: #F17EB4;
+    font-size: 47px;
+}
+#header2 {
+    font-size: 47px;
+    font-family: "Concert One", sans-serif;
+}
+p {
+    font-family: "Outfit", sans-serif;
+}
+.view {
+    height: 30px;
+    width: 92%;
+    background-color: #F17EB4;
+    color: #EFF7FB;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.view:hover {
+    opacity: 0.8;
+}
+.products {
+    height: 352px;
+    width: 69%;
+    color: #D75B86;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start; 
+    font-family: "Outfit", sans-serif;
+}
+.ccdiv {
+    height: 350px;
+    width: 250px;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+.cc {
+    height: 250px;
+    width: auto;
+}
+.header3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#infodiv {
+    width: 100%;
+    height: 70vh;
+    background-color: #DB6B92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    width: 300px;
+    height: 185px;
+    color: #EFF7FB;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+}
+.socialsdiv {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-top: 35px;
+    text-align: center;
+}
+.socials {
+    width: 50px;
+    height: 50px;
+}
+
+
+/***************************MENU CSS*************************/
+#bestseller {
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.bestsellerimg {
+    width: 70px;
+    height: 60px;
+}
+
+#products2 {
+    width: 100%;
+    height: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #D75B86;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-top: 35px;
+}
+.ccdiv2 {
+    height: 375px;
+    width: 250px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+#infodiv2 {
+    width: 100%;
+    height: 70vh;
+    background-color: #DB6B92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/***************************PROFILE CSS*************************/
+.cottoncandy2 {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+#signupdiv {
+    width: 400px;
+    height: 200px;
+    background-color: #DB6B92;
+    color: #EFF7FB;
+    position: absolute;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header6 {
+    font-size: 50px;
+    font-family: "Concert One", sans-serif;
+}
+.email {
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #EFF7FB;
+    font-size: 20px;
+    color: #CEE7F3;
 }
